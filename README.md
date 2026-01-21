@@ -54,6 +54,7 @@ Visualization & Insight Layer – Power BI
 
 This architecture ensures that all metrics are computed, reproducible, traceable, and analytically sound.
 
+---
 
 **Data Engineering & Transformation:**
 
@@ -79,6 +80,7 @@ For Instagram, I performed the following transformations:
 
 This structure enables accurate drill-down analysis while preserving performance.
 
+---
 
 **Facebook – Transformation Logic:**
 
