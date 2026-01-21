@@ -32,6 +32,7 @@ This file performs all core data preparation and feature engineering steps for b
 
 – Day of week
 
+---
 
 **Creating analytical views for:**
 
@@ -43,6 +44,7 @@ This file performs all core data preparation and feature engineering steps for b
 
 – Facebook_post
 
+---
 
 **Engineering derived metrics such as:**
 
