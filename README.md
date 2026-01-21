@@ -1,4 +1,4 @@
-# Social Media Performance Intelligence Dashboard
+# Social Media Performance Intelligence
 
 **The Problem:**
 
