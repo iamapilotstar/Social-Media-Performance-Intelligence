@@ -22,7 +22,7 @@ This file performs all core data preparation and feature engineering steps for b
 
 ---
 
-**Feature Engineering**
+**Feature Engineering:**
 
 **Engineering time-based features:**
 
