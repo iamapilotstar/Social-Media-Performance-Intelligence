@@ -1,3 +1,5 @@
+# Social Media Performance Intelligence Dashboard
+
 **The Problem:**
 
 Social media teams are often flooded with surface-level metrics such as likes, impressions and follower counts, but these numbers alone do not tell the complete story, so teams struggle to answer critical business questions like:
