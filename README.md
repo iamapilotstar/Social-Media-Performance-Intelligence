@@ -100,7 +100,7 @@ For Facebook, I followed the same rigorous transformation methodology:
 
 ---
 
-Feature Engineering
+**Feature Engineering**
 
 Raw platform exports do not contain business-ready KPIs. I manually engineered several analytical features to move beyond surface-level reporting:
 
@@ -140,7 +140,7 @@ This shows strong baseline engagement relative to reach.
 
 ---
 
-Content Format Performance
+**Content Format Performance**
 
 Static feed posts consistently outperform reels:
 
@@ -152,7 +152,7 @@ This suggests that the audience resonates more with text-based or visual-static 
 
 ---
 
-Engagement Over Time
+**Engagement Over Time**
 
 • Engagement peaked in November 2024 (127%), indicating a highly resonant campaign or viral post
 
@@ -162,7 +162,7 @@ This volatility suggests that content performance is highly sensitive to format,
 
 ---
 
-Profile Activity Breakdown
+**Profile Activity Breakdown**
 
 • Profile Visits: 57.76%
 
@@ -174,7 +174,7 @@ This indicates strong curiosity-driven behavior but weaker conversion into follo
 
 ---
 
-Reach Trends
+**Reach Trends**
 
 Profile reach showed moderate fluctuations with an upward trend between August and November 2024, peaking in October.
 
@@ -196,7 +196,7 @@ This suggests positive momentum but inconsistent traction.
 
 ---
 
-Interaction Breakdown
+**Interaction Breakdown**
 
 • Reactions: 61.98%
 
@@ -208,7 +208,7 @@ This indicates passive approval but weaker virality, as shares are low.
 
 ---
 
-Growth Trends
+**Growth Trends**
 
 • Follower growth peaked at 0.22M in 2024 (up from 0.03M in 2023)
 
@@ -218,7 +218,7 @@ This could be due to algorithm changes, seasonal behavior, or inconsistent posti
 
 ---
 
-Engagement Trend
+**Engagement Trend**
 
 • Engagement peaked at 254 in 2024
 
@@ -228,7 +228,7 @@ This suggests content fatigue or declining relevance.
 
 ---
 
-Post-Type Performance
+**Post-Type Performance**
 
 • Photos: 175 (highest)
 
@@ -260,7 +260,7 @@ Visual static content clearly dominates.
 
 ---
 
-Tools & Technologies
+**Tools & Technologies**
 
 • MS SQL Server – Data transformation, feature engineering, KPI computation, and analytical validation.
 
