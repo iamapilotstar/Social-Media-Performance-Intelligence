@@ -10,26 +10,44 @@ This SQL layer ensures that all metrics are reproducible, traceable and analytic
 
 This file performs all core data preparation and feature engineering steps for both Instagram and Facebook datasets.
 
-Key operations:
+**Key operations:**
 
 • Inspecting raw schemas using INFORMATION_SCHEMA
+
 • Creating reusable stored procedures for raw table inspection
+
 • Handling missing values using COALESCE
+
 • Standardizing date formats using TRY_CONVERT
-• Engineering time-based features:
+
+**Engineering time-based features:**
+
 – Year
+
 – Month name
+
 – Day of week
-• Creating analytical views for:
+
+**Creating analytical views for:**
+
 – instagram_profile
+
 – instagram_post
+
 – facebook_profile
+
 – Facebook_post
-• Engineering derived metrics such as:
+
+**Engineering derived metrics such as:**
+
 – Activity Score
+
 – Engagement Rate
+
 – Save Rate
+
 – Total Interactions
+
 – Post Interaction Rate %
 
 These transformations ensure that all datasets are consistent, stable, and ready for business analysis.
@@ -43,12 +61,19 @@ This file contains all business-focused analytical queries for Instagram perform
 It includes:
 
 • Total Media Reach
+
 • Total Likes
+
 • Total Shares
+
 • Total Saves
+
 • Total Posts
+
 • Engagement Rate by content type (Reels vs Static)
+
 • Engagement trends over time (month/year)
+
 • Profile reach trends
 
 These queries replicate the logic used in the Power BI visuals and are used to validate dashboard KPIs.
@@ -63,18 +88,31 @@ This file contains all business-focused analytical queries for Facebook performa
 It includes:
 
 • Total Page Followers
+
 • Total Profile Reach
+
 • Average Engagement Rate
+
 • Average Interaction Rate
+
 • Total Likes
+
 • Total Dislikes
+
 • Average Net Likes
+
 • Average Post Interaction Rate
+
 • Total Post Reach
+
 • Total Post Reactions
+
 • Post-type performance ranking using DENSE_RANK()
+
 • Follower growth over time
+
 • Net likes trends
+
 • Best day to post (weekday-level engagement analysis)
 
 These queries enable structured analysis of growth, engagement behavior, and content effectiveness.
@@ -83,9 +121,13 @@ These queries enable structured analysis of growth, engagement behavior, and con
 **This SQL pipeline was created to:**
 
 • Ensure reproducibility of results
+
 • Validate Power BI metrics
+
 • Demonstrate real-world data engineering practices
+
 • Maintain traceability of business logic
+
 • Enable platform-independent analysis
 
 ---
