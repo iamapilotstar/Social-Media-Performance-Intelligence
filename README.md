@@ -285,7 +285,7 @@ SocialPulse-Social-Media-Intelligence/
 │   ├── Instagram.sql
 │   └── README.md
 │
-├── Power BI/
+├── Power BI Dashboards/
 │   └── Instagram.pbix
 │   └── Facebook.pbix
 │
