@@ -15,6 +15,7 @@ Without deeper analytical insight, teams struggle to answer critical business qu
 • Is the profile converting attention into meaningful interactions?
 
 In most organizations, this data is scattered across dashboards, exported into spreadsheets, and manually analyzed, making it difficult to track trends, detect performance shifts or optimize content strategy in a timely manner.
+
 This project simulates a real-world analytics team scenario, where the goal is not just to report numbers, but to generate actionable insights that guide content strategy and platform optimization.
 
 ---
@@ -38,3 +39,14 @@ This system enables analytics teams to:
 Instead of static reports, this solution provides an interactive Power BI dashboard backed by a structured SQL pipeline that ensures all metrics are accurate, traceable and analytically meaningful.
 
 ---
+
+Technical Approach:
+This project follows a structured business intelligence pipeline that ensures all reported metrics are accurate, traceable, and decision-ready.
+
+The solution combines SQL-based data engineering with Power Query transformations to model and support high-performance analytics.
+
+For the full SQL-based data cleaning, feature engineering and KPI computation logic, view the complete SQL pipeline documentation here: 
+
+
+
+
