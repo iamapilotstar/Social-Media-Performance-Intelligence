@@ -44,7 +44,7 @@ Instead of static reports, this solution provides an interactive Power BI dashbo
 
 This project was designed as a full-stack analytics pipeline, not just a dashboarding exercise. The objective was to transform raw, platform-exported social media data into a validated, decision-ready intelligence system that could support real-world content and marketing strategy.
 
-For the full SQL-based data cleaning, feature engineering and KPI computation logic, view the complete SQL pipeline documentation here:  [View SQL Pipeline]()
+For the full SQL-based data cleaning, feature engineering and KPI computation logic, view the complete SQL pipeline documentation here:  [View SQL Pipeline](https://github.com/iamapilotstar/Social-Media-Performance-Intelligence/tree/main/SQL%20Data%20Cleaning%20and%20Analysis)
 
 
 The pipeline consists of three tightly coupled layers:
