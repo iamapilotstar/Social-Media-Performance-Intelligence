@@ -20,6 +20,10 @@ This file performs all core data preparation and feature engineering steps for b
 
 • Standardizing date formats using TRY_CONVERT
 
+---
+
+**Feature Engineering**
+
 **Engineering time-based features:**
 
 – Year
@@ -27,6 +31,7 @@ This file performs all core data preparation and feature engineering steps for b
 – Month name
 
 – Day of week
+
 
 **Creating analytical views for:**
 
@@ -37,6 +42,7 @@ This file performs all core data preparation and feature engineering steps for b
 – facebook_profile
 
 – Facebook_post
+
 
 **Engineering derived metrics such as:**
 
