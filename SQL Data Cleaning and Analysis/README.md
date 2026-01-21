@@ -6,7 +6,7 @@ This folder contains the SQL-based data engineering, transformation, and analyti
 
 This SQL layer ensures that all metrics are reproducible, traceable and analytically correct.
 
-1. **Data Cleaning & Data Engineering.sql**
+**Data Cleaning & Data Engineering.sql**
 
 This file performs all core data preparation and feature engineering steps for both Instagram and Facebook datasets.
 
@@ -54,7 +54,7 @@ These transformations ensure that all datasets are consistent, stable, and ready
 
 ---
 
-2. **Instagram.sql**
+**Instagram.sql**
 
 This file contains all business-focused analytical queries for Instagram performance.
 
@@ -81,7 +81,7 @@ These queries replicate the logic used in the Power BI visuals and are used to v
 
 ---
 
-3. **Facebook.sql**
+**Facebook.sql**
 
 This file contains all business-focused analytical queries for Facebook performance.
 
