@@ -50,7 +50,7 @@ Data Engineering & Transformation Layer - SQL + Power Query
 
 Validation & Analytical Layer - SQL
 
-Visualization & Insight Layer – Power BI
+Visualization & Insight Layer - Power BI
 
 This architecture ensures that all metrics are computed, reproducible, traceable, and analytically sound.
 
