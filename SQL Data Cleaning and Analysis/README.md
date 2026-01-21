@@ -125,6 +125,7 @@ It includes:
 
 These queries enable structured analysis of growth, engagement behavior, and content effectiveness.
 
+---
 
 **This SQL pipeline was created to:**
 
