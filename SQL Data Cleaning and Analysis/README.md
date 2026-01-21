@@ -141,7 +141,7 @@ These queries enable structured analysis of growth, engagement behavior, and con
 
 ---
 
-How This Connects to Power BI
+**Conclusion:**
 
 All SQL views act as the analytical foundation for the Power BI dashboard. The KPI logic implemented here mirrors the transformations performed in Power Query, ensuring consistency between backend transformations and frontend reporting.
 
