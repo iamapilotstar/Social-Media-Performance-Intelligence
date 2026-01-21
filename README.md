@@ -280,7 +280,7 @@ Visual static content clearly dominates.
 SocialPulse-Social-Media-Intelligence/
 │
 ├── SQL Data Cleaning and Analysis/
-│   ├── data_cleaning_&_data_engineering.sql
+│   ├── Data Cleaning and Engineering.sql
 │   ├── Facebook.sql
 │   ├── Instagram.sql
 │   └── README.md
