@@ -1,8 +1,6 @@
 
-SELECT * FROM instagram_profile
-SELECT * FROM instagram_post
 
-EXEC final_view
+SELECT * FROM final_view
 
 
 -- KPI Metrics Instagram
@@ -64,5 +62,6 @@ ORDER BY
 			WHEN month_name = 'November' THEN 11
 			WHEN month_name = 'December' THEN 12
 		END
+
 
 
