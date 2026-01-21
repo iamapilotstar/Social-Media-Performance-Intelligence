@@ -1,8 +1,6 @@
 **The Problem:**
 
-Social media teams are often flooded with surface-level metrics such as likes, impressions and follower counts, but these numbers alone do not tell a complete performance story. 
-
-Without deeper analytical insight, teams struggle to answer critical business questions like:
+Social media teams are often flooded with surface-level metrics such as likes, impressions and follower counts, but these numbers alone do not tell the complete story, so teams struggle to answer critical business questions like:
 
 • Which day of the week is best for posting to maximize engagement?
 
@@ -14,9 +12,9 @@ Without deeper analytical insight, teams struggle to answer critical business qu
 
 • Is the profile converting attention into meaningful interactions?
 
-In most organizations, this data is scattered across dashboards, exported into spreadsheets, and manually analyzed, making it difficult to track trends, detect performance shifts or optimize content strategy in a timely manner.
+In most organizations, this data is scattered across dashboards, exported into spreadsheets and manually analyzed which takes time and makes it difficult to track trends, detect performance shifts or optimize content strategy in a timely manner.
 
-This project simulates a real-world analytics team scenario, where the goal is not just to report numbers, but to generate actionable insights that guide content strategy and platform optimization.
+This project simulates a real-world analytics team scenario, where the goal is not just to report numbers, but to generate insights that guide content strategy and profile optimization.
 
 ---
 
@@ -35,8 +33,6 @@ This system enables analytics teams to:
 • Evaluate whether the profile is converting reach into meaningful engagement
 
 • Detect periods of growth, stagnation or decline
-
-Instead of static reports, this solution provides an interactive Power BI dashboard backed by a structured SQL pipeline that ensures all metrics are accurate, traceable and analytically meaningful.
 
 ---
 
@@ -69,17 +65,13 @@ For Instagram, I performed the following transformations:
 
 • Converted date and numeric columns into proper data types to ensure correct aggregation and time-series behavior
 
-• Filtered out null and invalid rows that would distort engagement metrics
-
-• Removed unnecessary columns to simplify the analytical model
-
-• Cleaned categorical fields such as gender, which contained undefined or inconsistent values
+• Removed null and invalid records
 
 • Created a custom Profile Activity table to support breakdown visuals
 
-• Built DAX measures for engagement, post-type interaction, and trend analysis
+• Built DAX measures for engagement rate, post-type interaction and trend analysis
 
-• Implemented a 1-to-many, single-directional relationship between Profile Overview and Post Engagement tables via the Date column to enable consistent slicer filtering
+• Implemented a 1-to-many, single-directional relationship between Instagram Profile Overview and Post Engagement tables via the Date column to enable consistent slicer filtering
 
 This structure enables accurate drill-down analysis while preserving performance.
 
@@ -89,15 +81,13 @@ This structure enables accurate drill-down analysis while preserving performance
 
 For Facebook, I followed the same rigorous transformation methodology:
 
-• Standardized data types for reach, engagement, reactions, and dates
+• Standardized data types for reach, engagement, reactions and dates
 
 • Removed null and invalid records
 
-• Eliminated unnecessary columns
-
 • Created a custom Interaction Type table to enable donut chart breakdowns
 
-• Built DAX measures for Net Likes per Day, Interaction Rate, and Growth Metrics
+• Built DAX measures for Net Likes per Day, Interaction Rate and Growth Metrics
 
 • Enabled dynamic date slicers to allow time-based filtering across all visuals
 
@@ -105,19 +95,20 @@ For Facebook, I followed the same rigorous transformation methodology:
 
 **Feature Engineering**
 
-Raw platform exports do not contain business-ready KPIs. I manually engineered several analytical features to move beyond surface-level reporting:
+I manually engineered several analytical features to move beyond surface-level reporting:
 
 Engineered Metrics
 
-• Engagement Rate
+• Engagement Rate - (Likes + Comments + Shares + Saves) ÷ Reach × 100
 
-• Interaction Rate
+• Interaction Rate - (Total Reactions + Comments + Shares) ÷ Post Impressions × 100
 
-• Save Rate
+• Save Rate - Unique Saves ÷ Reach
+
+• Activity Score - Profile Impressions + Shares + Engagement + Profile Visits + Reach + Reel Shares + New Followers
 
 • Time-based features (year, month, weekday)
 
-• Content-type classification (Reels vs Static)
 
 These features allow performance to be evaluated in relative terms rather than raw volume.
 
@@ -139,7 +130,7 @@ These features allow performance to be evaluated in relative terms rather than r
 
 • Average Engagement Rate: 5.5%
 
-This shows strong baseline engagement relative to reach.
+These metrics show a strong baseline engagement relative to reach.
 
 ---
 
@@ -161,7 +152,7 @@ This suggests that the audience resonates more with text-based or visual-static 
 
 • Engagement dropped sharply in October 2024 (8%) and December 2024 (23%)
 
-This volatility suggests that content performance is highly sensitive to format, timing, or theme.
+This volatility suggests that content performance is highly sensitive to format, timing or theme.
 
 ---
 
@@ -271,7 +262,7 @@ Visual static content clearly dominates.
 
 • Power BI – Dashboard development, DAX measures, interactive filtering, and visual analytics.
 
-• Python (Pandas, Matplotlib, Seaborn) – Exploratory Data Analysis (EDA), correlation analysis, and behavioral pattern discovery.
+• Python (Pandas, Matplotlib, Seaborn) – Exploratory Data Analysis (EDA), correlation analysis and behavioral pattern discovery.
 
 ---
 
