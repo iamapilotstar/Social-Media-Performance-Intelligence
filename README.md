@@ -122,7 +122,7 @@ These features allow performance to be evaluated in relative terms rather than r
 
 **Findings:**
 
-**Instagram:**
+**Instagram Insights:**
 
 • Total Media Reach: 157K
 
