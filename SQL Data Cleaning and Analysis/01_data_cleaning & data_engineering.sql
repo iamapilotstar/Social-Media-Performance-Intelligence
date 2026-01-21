@@ -1,15 +1,5 @@
-CREATE PROCEDURE selectstatement AS
-SELECT * FROM instagram_post_engagement
-SELECT * FROM instagram_profile_overview
-SELECT * FROM facebook_post_engagements
-SELECT * FROM facebook_profile_overview
-GO
 
-
-
-EXEC selectstatement
-
-
+-- Table Schema
 SELECT COLUMN_NAME, DATA_TYPE
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'instagram_post_engagement'
@@ -26,7 +16,7 @@ SELECT COLUMN_NAME, DATA_TYPE
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'facebook_post_engagements'
 
-
+-- Instagram Profile View
 CREATE VIEW instagram_profile AS
 SELECT DATE, 
 -- Replacing Null with 0 if any
@@ -37,6 +27,7 @@ COALESCE(Profile_impressions, 0) AS Profile_impressions,COALESCE(Shares, 0) AS S
 COALESCE(Profile_impressions,0) + COALESCE(Shares,0) 
 + COALESCE(Engagement,0) + COALESCE(Profile_visits,0) + COALESCE(Profile_reach,0) + COALESCE(Reel_shares,0) + COALESCE(New_followers,0) AS Activity_score,
 
+-- Converting Year, Month and Date to approapriate format usint TRY_CONVERT.
 YEAR(TRY_CONVERT(date, DATE, 105)) AS Year_num,
 DATENAME(MONTH, TRY_CONVERT(date, DATE, 105)) AS Month_name,
 DATENAME(WEEKDAY, TRY_CONVERT(date, DATE, 105)) AS Day_name
@@ -119,4 +110,5 @@ SELECT * FROM facebook_profile
 GO
 
 EXEC final_view
+
 
