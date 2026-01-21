@@ -61,11 +61,9 @@ This architecture ensures that all metrics are computed, reproducible, traceable
 
 **Data Engineering & Transformation:**
 
-Raw exports from Instagram and Facebook contain inconsistent schemas, mixed data types, missing values, and platform-specific metric definitions.
 
 
-
-**Instagram – Transformation Logic:**
+**Instagram:**
 
 For Instagram, I performed the following transformations:
 
@@ -87,7 +85,7 @@ This structure enables accurate drill-down analysis while preserving performance
 
 ---
 
-**Facebook – Transformation Logic:**
+**Facebook:**
 
 For Facebook, I followed the same rigorous transformation methodology:
 
