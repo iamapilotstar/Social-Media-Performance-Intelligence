@@ -36,6 +36,8 @@ This system enables analytics teams to:
 
 • Detect periods of growth, stagnation or decline
 
+📄 **Report:** [View Report](https://drive.google.com/file/d/1U2aVtdqkenWQ70npzBiXx7z_doS7is7T/view?usp=sharing)
+
 ---
 
 **Technical Approach:**
